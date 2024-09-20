@@ -1,5 +1,12 @@
-console.log('utilities file added');
+// console.log('utilities file added');
 function getInputFieldValueById(id){
     const inputValue = document.getElementById(id).value;
-    return inputValue;
+    const inputNumber = parseFloat(inputValue);
+    return inputNumber;
+}
+
+function getTextFieldValueById(id){
+    const textValue  = document.getElementById(id).innerText;
+    const textNumber = parseFloat(textValue);
+    return textNumber;
 }
